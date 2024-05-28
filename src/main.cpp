@@ -12,7 +12,7 @@ int main() {
         << std::endl;
 
     unsigned int countCapitalWords = faStr2(testStr2);
-    std::cout << "Number of words starting with a capital Latin letter"
+    std::cout << "Number of words starting with a capital Latin letter "
         << "and containing only lowercase letters: " << countCapitalWords
         << std::endl;
 
