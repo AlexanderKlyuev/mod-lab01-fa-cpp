@@ -1,8 +1,8 @@
 // Copyright 2022 UNN-IASR
-#include "fun.h"
 #include <cctype>
 #include <cstring>
 #include <cmath>
+#include "fun.h"
 
 unsigned int faStr1(const char *str) {
     unsigned int count = 0;
@@ -16,8 +16,7 @@ unsigned int faStr1(const char *str) {
             }
             inWord = false;
             hasDigit = false;
-        }
-        else {
+        } else {
             if (!inWord) {
                 inWord = true;
                 hasDigit = false;
@@ -47,19 +46,16 @@ unsigned int faStr2(const char *str) {
             }
             inWord = false;
             validWord = false;
-        }
-        else {
+        } else {
             if (!inWord) {
                 if (std::isupper(str[i])) {
                     inWord = true;
                     validWord = true;
-                }
-                else {
+                } else {
                     inWord = false;
                     validWord = false;
                 }
-            }
-            else {
+            } else {
                 if (!std::islower(str[i])) {
                     validWord = false;
                 }
@@ -88,8 +84,7 @@ unsigned int faStr3(const char *str) {
                 inWord = false;
                 currentWordLength = 0;
             }
-        }
-        else {
+        } else {
             if (!inWord) {
                 inWord = true;
             }
